@@ -23,19 +23,29 @@ The application is free software.
 Installation on Linux (Fedora) is performed with administrator rights.
 To run the project you need to install Rust.
 Installing Rust:
+
 \# dnf install rust cargo
 
 To install dependencies correctly, the Cargo.toml file must contain:
+
 [dependencies]
+
 actix-web = "4"
+
 serde = { version = "1.0.201", features = ["derive"] }
+
 regex = "1.10.4"
 
 Installing Python:
+
 \# dnf install python
+
 Installing pip:
+
 \# dnf install python3-pip
+
 Installing package for text lemmatization:
+
 \# pip install pymystem3
 
 
@@ -47,14 +57,18 @@ In the file **python_lemma/a.py** there is a variable **text**.
 The text to be lemmatized is assigned to variable **text**.
 
 Lemmatize text by running the command
+
 \$ python a.py
+
 The console output will contain the lemmatized, sorted, and lowercase text.
 The resulting text should be entered into a text file(s) that will be used for searching.
 
 
 ## Usage
 Rust is started from the project directory using the command
+
 \$ cargo run
+
 Open localhost:8080 in the browser.
 A text input area will appear on the screen. 
 The lemmatized and sorted text for the search should be entered in the text input area.
